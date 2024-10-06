@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "esnext", // Use the latest ECMAScript version
+    "module": "esnext", // Use ES modules
+    "baseUrl": "./", // Base URL for module resolution
+    "moduleResolution": "node", // Resolve modules using Node's resolution algorithm
+    "paths": {
+      "@/*": ["src/*"] // Alias for src directory
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable"
+    ],
+    "types": [
+      "node",  // Include Node.js types
+      "ws",    // WebSocket types if you're using them
+      "bonjour", // Add types for bonjour
+      "estree"  // Add types for estree
+    ]
+  },
+  "include": [
+    "src/**/*" // Include all files in the src directory
+  ],
+  "exclude": [
+    "node_modules" // Exclude the node_modules directory
+  ]
+}
